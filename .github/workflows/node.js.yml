@@ -5,7 +5,7 @@ name: Send kouluinfo
 
 on:
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '0 5 * * *'
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
