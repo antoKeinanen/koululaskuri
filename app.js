@@ -65,7 +65,7 @@ const getMessage = (data, msg = "") => {
   });
 
   if (currentExam) {
-    if (currentExam.daysToEnd == 1) {
+    if (currentExam.daysToEnd == -1) {
       msg += `${currentExam.name} päättyi tänään.`;
     } else {
       msg += `Nyt on ${currentExam.name}, joka kestää vielä ${currentExam.daysToEnd} päivää!`;
