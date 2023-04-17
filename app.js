@@ -52,7 +52,6 @@ const getMessage = (data, msg = "") => {
       exam = e;
     }
   });
-  msg += "||";
   const examMessage = `Seuraava ${exam?.name} on ${exam?.daysTo} pävän kuluttua`;
 
   let currentExam = null;
@@ -73,7 +72,7 @@ const getMessage = (data, msg = "") => {
   } else {
     msg += examMessage;
   }
-  msg += "||\n";
+  msg += "\n";
 
   let breakk = null;
   breaks.forEach((b) => {
