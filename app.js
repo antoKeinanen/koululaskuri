@@ -33,6 +33,7 @@ const getMessage = (data, msg = "") => {
   const springEnd = data[3];
   const breaks = data[4];
   const exams = data[6];
+  const yoExams = data[7];
 
   const toAutumnStart = diff(autumnStart);
   const toAutumnEnd = diff(autumnEnd);
@@ -47,19 +48,43 @@ const getMessage = (data, msg = "") => {
       }
       return;
     }
-    if (b.daysTo < 0) return;
+    if (e.daysTo < 0) return;
     if (e.daysTo < exam) {
       exam = e;
     }
   });
+
+  let yoExam = null;
+  yoExams.forEach((e) => {
+    if (!yoExam) {
+      if (e.daysTo > 0) {
+        yoExam = e;
+      }
+      return;
+    }
+    if (e.daysTo < 0) return;
+    if (e.daysTo < yoExam) {
+      yoExam = e;
+    }
+  });
+
   const examMessage = `Seuraava ${exam?.name} on ${exam?.daysTo} pävän kuluttua`;
+  const yoMessage = `Seuraava ${yoExam?.name} on ${yoExam?.daysTo} pävän kuluttua`;
 
   let currentExam = null;
+  let currentYoExam = null;
 
   exams.forEach((e) => {
     if (currentExam) return;
     if (e.daysTo <= 0 && e.daysToEnd >= 0) {
       currentExam = e;
+    }
+  });
+
+  yoExams.forEach((e) => {
+    if (currentYoExam) return;
+    if (e.daysTo <= 0 && e.daysToEnd >= 0) {
+      currentYoExam = e;
     }
   });
 
@@ -71,6 +96,17 @@ const getMessage = (data, msg = "") => {
     }
   } else {
     msg += examMessage;
+  }
+  msg += "\n";
+
+  if (currentYoExam) {
+    if (currentYoExam.daysToEnd == -1) {
+      msg += `${currentYoExam.name} päättyi tänään.`;
+    } else {
+      msg += `Nyt on ${currentYoExam.name}, joka kestää vielä ${currentYoExam.daysToEnd} päivää!`;
+    }
+  } else {
+    msg += yoMessage;
   }
   msg += "\n";
 
@@ -142,6 +178,7 @@ Object.keys(config.subscribers).forEach((entry) => {
   const springEnd = new Date(user.springEnd);
   const breaks = [];
   const exams = [];
+  const yoExams = [];
 
   user.breaks.forEach((b) => {
     breaks.push({
@@ -163,6 +200,16 @@ Object.keys(config.subscribers).forEach((entry) => {
     });
   });
 
+  user["yo-kokeet"].forEach((e) => {
+    yoExams.push({
+      name: e.name,
+      start: new Date(e.start),
+      end: new Date(e.end),
+      daysTo: diff(new Date(e.start)),
+      daysToEnd: diff(new Date(e.end)),
+    });
+  });
+
   const message = getMessage(
     [
       autumnStart,
@@ -172,6 +219,7 @@ Object.keys(config.subscribers).forEach((entry) => {
       breaks,
       user.hideOnSummerVacation,
       exams,
+      yoExams
     ],
     `${entry}\n`
   );
