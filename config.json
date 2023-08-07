@@ -44,31 +44,16 @@
           "start": "2024-09-21",
           "end": "2024-09-29"
         },
-        // {
-        //   "name": "Väliviikko",
-        //   "start": "2024-10-31",
-        //   "end": "2024-11-4"
-        // },
         {
           "name": "Koeviikko",
           "start": "2024-11-22",
           "end": "2024-11-29"
         },
-        // {
-        //   "name": "Väliviikko",
-        //   "start": "2024-01-09",
-        //   "end": "2024-01-13"
-        // },
         {
           "name": "Koeviikko",
           "start": "2024-01-29",
           "end": "2024-02-06"
         },
-        // {
-        //   "name": "Väliviikko",
-        //   "start": "2024-03-06",
-        //   "end": "2024-03-10"
-        // },
         {
           "name": "Koeviikko",
           "start": "2024-03-26",
@@ -82,12 +67,12 @@
       ],
       "yo-kokeet": [
         {
-          "name": "Syksyn Ylioppilaskoe",
+          "name": "Ylioppilaskoe",
           "start": "2023-09-11",
           "end": "2023-09-27"
         },
         {
-          "name": "Kevään Ylioppilaskoe",
+          "name": "Ylioppilaskoe",
           "start": "2024-03-12",
           "end": "2024-04-03"
         }
