@@ -2,7 +2,7 @@
   "subscribers": {
     "<@&1092104061836333177>": {
       "hideOnSummerVacation": false,
-      "autumnStart": "2023-10-08",
+      "autumnStart": "2023-08-10",
       "autumnEnd": "2023-12-22",
       "springStart": "2024-01-08",
       "springEnd": "2024-06-01",
@@ -41,13 +41,13 @@
       "exams": [
         {
           "name": "Koeviikko",
-          "start": "2024-09-21",
-          "end": "2024-09-29"
+          "start": "2023-09-21",
+          "end": "2023-09-29"
         },
         {
           "name": "Koeviikko",
-          "start": "2024-11-22",
-          "end": "2024-11-29"
+          "start": "2023-11-22",
+          "end": "2023-11-29"
         },
         {
           "name": "Koeviikko",
