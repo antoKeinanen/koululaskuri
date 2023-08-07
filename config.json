@@ -2,82 +2,94 @@
   "subscribers": {
     "<@&1092104061836333177>": {
       "hideOnSummerVacation": false,
-      "autumnStart": "2022-11-08",
-      "autumnEnd": "2022-12-21",
-      "springStart": "2023-01-09",
-      "springEnd": "2023-06-03",
+      "autumnStart": "2023-10-08",
+      "autumnEnd": "2023-12-22",
+      "springStart": "2024-01-08",
+      "springEnd": "2024-06-01",
       "breaks": [
         {
           "name": "Syysloma",
-          "start": "2022-10-17",
-          "end": "2022-10-23"
+          "start": "2023-10-16",
+          "end": "2023-10-23"
         },
         {
           "name": "Itsenäisyyspäivä :flag_fi:",
-          "start": "2022-12-05",
-          "end": "2022-12-06"
+          "start": "2023-12-05",
+          "end": "2023-12-06"
         },
         {
           "name": "Talviloma",
-          "start": "2023-02-27",
-          "end": "2023-03-05"
+          "start": "2024-02-19",
+          "end": "2024-02-13"
         },
         {
           "name": "Pääsiäinen",
-          "start": "2023-04-07",
-          "end": "2023-04-10"
+          "start": "2024-03-28",
+          "end": "2024-04-01"
         },
         {
           "name": "Vappu",
-          "start": "2023-05-1",
-          "end": "2023-05-1"
+          "start": "2024-05-1",
+          "end": "2024-05-1"
         },
         {
           "name": "Helatorstai",
-          "start": "2023-05-18",
-          "end": "2023-05-18"
+          "start": "2024-05-9",
+          "end": "2024-05-9"
         }
       ],
       "exams": [
         {
           "name": "Koeviikko",
-          "start": "2022-09-22",
-          "end": "2022-09-30"
+          "start": "2024-09-21",
+          "end": "2024-09-29"
         },
+        // {
+        //   "name": "Väliviikko",
+        //   "start": "2024-10-31",
+        //   "end": "2024-11-4"
+        // },
         {
-          "name": "Väliviikko",
-          "start": "2022-10-31",
-          "end": "2022-11-4"
+          "name": "Koeviikko",
+          "start": "2024-11-22",
+          "end": "2024-11-29"
+        },
+        // {
+        //   "name": "Väliviikko",
+        //   "start": "2024-01-09",
+        //   "end": "2024-01-13"
+        // },
+        {
+          "name": "Koeviikko",
+          "start": "2024-01-29",
+          "end": "2024-02-06"
+        },
+        // {
+        //   "name": "Väliviikko",
+        //   "start": "2024-03-06",
+        //   "end": "2024-03-10"
+        // },
+        {
+          "name": "Koeviikko",
+          "start": "2024-03-26",
+          "end": "2024-04-05"
         },
         {
           "name": "Koeviikko",
-          "start": "2022-11-22",
-          "end": "2022-11-30"
+          "start": "2024-05-22",
+          "end": "2024-05-30"
+        }
+      ],
+      "yo-kokeet": [
+        {
+          "name": "Syksyn Ylioppilaskoe",
+          "start": "2023-09-11",
+          "end": "2023-09-27"
         },
         {
-          "name": "Väliviikko",
-          "start": "2023-01-09",
-          "end": "2023-01-13"
-        },
-        {
-          "name": "Koeviikko",
-          "start": "2023-01-31",
-          "end": "2023-02-08"
-        },
-        {
-          "name": "Väliviikko",
-          "start": "2023-03-06",
-          "end": "2023-03-10"
-        },
-        {
-          "name": "Koeviikko",
-          "start": "2023-03-29",
-          "end": "2023-04-06"
-        },
-        {
-          "name": "Koeviikko",
-          "start": "2023-05-24",
-          "end": "2023-06-01"
+          "name": "Kevään Ylioppilaskoe",
+          "start": "2024-03-12",
+          "end": "2024-04-03"
         }
       ]
     }
