@@ -68,8 +68,8 @@ const getMessage = (data, msg = "") => {
     }
   });
 
-  const examMessage = `Seuraava ${exam?.name} on ${exam?.daysTo} pävän kuluttua`;
-  const yoMessage = `Seuraava ${yoExam?.name} on ${yoExam?.daysTo} pävän kuluttua`;
+  const examMessage = `Seuraava ${exam?.name} on ${exam?.daysTo} päivän kuluttua`;
+  const yoMessage = `Seuraava ${yoExam?.name} on ${yoExam?.daysTo} päivän kuluttua`;
 
   let currentExam = null;
   let currentYoExam = null;
